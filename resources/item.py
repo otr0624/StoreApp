@@ -2,11 +2,12 @@ from flask_restful import Resource, reqparse
 from flask_jwt_extended import jwt_required
 from models.item import ItemModel
 
-BLANK_ERROR = '{} cannot be left blank.'
-ITEM_NOT_FOUND = 'Item not found.'
-NAME_ALREADY_EXISTS = 'An item with name {} already exists.'
-ERROR_INSERTING = 'An error occurred while inserting the item.'
-ITEM_DELETED = 'Item deleted.'
+BLANK_ERROR = "{} cannot be left blank."
+ITEM_NOT_FOUND = "Item not found."
+NAME_ALREADY_EXISTS = "An item with name {} already exists."
+ERROR_INSERTING = "An error occurred while inserting the item."
+ITEM_DELETED = "Item deleted."
+
 
 class Item(Resource):
     parser = reqparse.RequestParser()

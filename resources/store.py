@@ -1,10 +1,11 @@
 from flask_restful import Resource, reqparse
 from models.store import StoreModel
 
-STORE_DELETED = 'Store deleted.'
-STORE_NOT_FOUND = 'Store not found.'
-STORE_ALREADY_EXISTS = 'A store with name {} already exists.'
-ERROR_CREATING = 'An error occurred creating the store.'
+STORE_DELETED = "Store deleted."
+STORE_NOT_FOUND = "Store not found."
+STORE_ALREADY_EXISTS = "A store with name {} already exists."
+ERROR_CREATING = "An error occurred creating the store."
+
 
 class Store(Resource):
     @classmethod

@@ -12,20 +12,20 @@ from flask_jwt_extended import (
 from models.user import UserModel
 from blacklist import BLACKLIST
 
-BLANK_ERROR = '{} cannot be left blank.'
-USER_EXISTS = 'A user with that username already exists.'
-USER_CREATED = 'User created successfully.'
-USER_NOT_FOUND = 'User not found.'
-USER_DELETED = 'User deleted.'
-INVALID_CREDENTIALS = 'Invalid credentials.'
-LOGGED_OUT = 'Successfully logged out.'
+BLANK_ERROR = "{} cannot be left blank."
+USER_EXISTS = "A user with that username already exists."
+USER_CREATED = "User created successfully."
+USER_NOT_FOUND = "User not found."
+USER_DELETED = "User deleted."
+INVALID_CREDENTIALS = "Invalid credentials."
+LOGGED_OUT = "Successfully logged out."
 
 _user_parser = reqparse.RequestParser()
 _user_parser.add_argument(
-    "username", type=str, required=True, help=BLANK_ERROR.format('Username')
+    "username", type=str, required=True, help=BLANK_ERROR.format("Username")
 )
 _user_parser.add_argument(
-    "password", type=str, required=True, help=BLANK_ERROR.format('Password')
+    "password", type=str, required=True, help=BLANK_ERROR.format("Password")
 )
 
 
