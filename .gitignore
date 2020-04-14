@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 .idea/
+models/__pycache__/
+resources/__pycache__/
