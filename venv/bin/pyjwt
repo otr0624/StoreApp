@@ -1,4 +1,4 @@
-#!/home/otr0624/PycharmProjects/TenPythonProjects/Section7Clean/venv/bin/python
+#!/home/otr0624/PycharmProjects/RestAPI/Course/StoreItemApp/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
