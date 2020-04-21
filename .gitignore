@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+.idea/
+models/__pycache__/
+resources/__pycache__/
